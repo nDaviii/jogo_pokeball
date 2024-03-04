@@ -6,7 +6,7 @@
 
 <br>
 
-# Jogo do Alien
+# Jogo da Pokeball
 
 ## 👨‍🎓 Aluno:
 - <a href="https://www.linkedin.com/in/davi-nascimento-de-jesus/">Davi Nascimento de Jesus</a>
@@ -18,7 +18,9 @@
 
 O projeto presente se configura em um jogo desenvolvido com base no material de autoestudo proposto no ano de fundamentos do curso de Engenharia da Computação pelo Instituto de Tecnologia e Liderança, Inteli. 
 
-A dinâmica e as mecânicas do jogo consistem na apresentação do Gary, um treinador Pokemon que está prestes a sair em uma jornada de capturar Pokemon. Para isso, ele precisa pegar as 5 pokeballs que são oferecidas para ele gratuitamente. No console, aparecem as opções de Pokemon que ele deseja capturar, código de exibição que utiliza das ferramentas de programação aprendidas até então.
+A dinâmica e as mecânicas do jogo consistem na apresentação do Gary, um treinador que está prestes a sair em uma jornada de capturar Pokemon. Para isso, ele precisa pegar as 5 pokeballs que são oferecidas para ele gratuitamente. 
+
+No console, aparecem as opções de Pokemon que ele deseja capturar, código de exibição que utiliza das ferramentas de programação aprendidas até então.
 
 As teclas utilizadas para a movimentação são as setas de direção (Up, Down, Right, Left). Além disso, o jogo conta com a mecânica física do Phaser Arcade Engine e com o sistema de pontuação, com placar vísivel a todo o momento, por coleta das pokeballs que aparecem randomicamente na tela, até que ele tenha pego 5 e seja redirecionado para a tela de Game Over.
 
