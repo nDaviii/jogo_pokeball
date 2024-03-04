@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeball Game</title>
+
+    <!-- Inclusão da biblioteca Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <!-- Inclusão dos scripts das cenas do jogo -->
+    <script src="scenes/start.js"></script>
+    <script src="scenes/mapa.js"></script>
+    <script src="scenes/gameOver.js"></script>
+    
+    <!-- Estilos para centralizar o conteúdo -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Configuração e criação do jogo Phaser -->
+    <script>
+        // Configuração do jogo
+        var config = {
+            type: Phaser.AUTO,
+            width: 1280,
+            height: 720,
+            scale: {
+                mode: Phaser.Scale.FIT,
+            },
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 900 }, // Configuração da gravidade do jogo
+                }
+            },
+            pixelArt: true,
+            scene: [Start, Mapa, GameOver] // Lista de cenas do jogo
+        };
+
+        // Criação da instância do jogo
+        var game = new Phaser.Game(config);
+
+       // Mensagem inicial
+        console.log("Quais pokémon eu vou capturar com as pokeballs?");
+
+        // Lista de pokémons
+        var pokemon = ["Pikachu", "Charizard", "Blastoise", "Blaziken", "Rayquaza (pode sonhar a vontade :) )"];
+
+        // Função para apresentar opções
+        function apresentarOpcoes(options) {
+            console.log("What can I do while this game is still running?");
+
+            // Loop para exibir opções no console
+            for (let i of options) {
+                console.log(i);
+            }
+        }
+
+        // Chamada da função para apresentar opções usando a lista de pokémons
+        apresentarOpcoes(pokemon);
+        
+    </script>
+</body>
+</html>
